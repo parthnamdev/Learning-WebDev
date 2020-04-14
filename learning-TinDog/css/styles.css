@@ -23,7 +23,7 @@ h3{
 p{
     color: #8f8f8f;
 }
-/* styling navigattion bar */
+/* styling navigation bar */
 .navbar{
     padding-bottom: 4.5rem;
 }
@@ -50,6 +50,8 @@ p{
     width: 60%;
     transform: rotate(25deg);
 }
+
+/* features section */
 #features{
     padding: 7% 15%;
 }
@@ -60,4 +62,15 @@ p{
 .icon{
     color: #ef8172;
     margin-bottom: 1rem;
+}
+.icon:hover{
+    color: #ff4c68;
+
+}
+
+/* Testimonials section */
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
 }
