@@ -9,6 +9,9 @@
   display: inline-block;
 
 }
+.refreshMe {
+  color: #EEEEEE
+}
 
 body {
   background-color: #393E46;
