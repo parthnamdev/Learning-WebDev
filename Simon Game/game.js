@@ -33,7 +33,7 @@ $(document).keydown(function () {
   }
 });
 
-/* //this also works
+/* //alternate
 $(".btn").click(function() {
 
   var userChosenColour = $(this).attr("id");
@@ -41,7 +41,24 @@ $(".btn").click(function() {
 
   makeSound(userChosenColour);
   buttonAnimation(userChosenColour);
-});*/
+  checkAnswer(userClickedPattern.length-1);
+
+});
+
+function checkAnswer(i) {
+
+    if (gamePattern[i] === userClickedPattern[i]) {
+      if (userClickedPattern.length === gamePattern.length){
+        setTimeout(function () {
+          nextSequence();
+        }, 1000);
+      }
+    } else {
+      gameOver();
+    }
+}
+
+*/
 
 //detects click on color
 $(".btn").click(function () {
@@ -49,9 +66,9 @@ $(".btn").click(function () {
     userClickedPattern.push(this.id);
     makeSound(this.id);
     buttonAnimation(this.id);
-    console.log(userClickedPattern);
-    console.log(gamePattern);
-    console.log(level);
+    // console.log(userClickedPattern);
+    // console.log(gamePattern);
+    // console.log(level);
     
     if (userClickedPattern[temp] !== gamePattern[temp]){
         gameOver();
