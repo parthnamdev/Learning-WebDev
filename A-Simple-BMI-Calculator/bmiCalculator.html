@@ -4,13 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI-Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+    body{
+        background-color: black;
+        text-align: center;
+        color: white;
+        
+    }
+    input{
+        margin: 10px;
+        width: 35%;
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+        padding-left: 20px;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 5rem;
+    }
+    
+    .heading{
+        font-family: 'Amatic SC', cursive;
+    }
+    .container-fluid{
+        padding: 150px 0;
+    }
+    .btn{
+        margin: 30px auto;
+    }
+</style>
 </head>
 <body>
+    <div class="container-fluid">
     <form action="/" method="post">
-        <h1>BMI Calcultor</h1>
-        <input type="text" name="weight" id="" placeholder="weight in kg">
-        <input type="text" name="height" id="" placeholder="height in metre">
-        <button type="submit">Calculate BMI</button>
+        <h1 class="heading">BMI Calcultor</h1>
+        <input type="text" name="weight" id="" placeholder="weight in kg"><br>
+        <input type="text" name="height" id="" placeholder="height in metre"><br>
+        <button type="submit" class="btn btn-lg btn-outline-light">Calculate BMI</button>
     </form>
+</div>
 </body>
 </html>
