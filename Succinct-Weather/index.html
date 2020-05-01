@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href= "styles.css">
+    <!--Font Awesome -->
+    <!-- <script
+      src="https://kit.fontawesome.com/36c86b628a.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="@fortawesome\fontawesome-free\css\all.css">
     <title>Document</title>
 </head>
-<body>
-    <h1>hello</h1>
+<body class="theme">
+    <div class="background-images container-fluid">
+        <i class="fas fa-wind"></i>
+        <i class="fas fa-cloud-sun-rain"></i>
+    </div>
+    <div>
+    <div class = "container-fluid main">
+    <nav class="navbar">
+        <a class="navbar-brand" href="/">Succinct .weather</a>
+        <button href="" onclick="myFunction()" class="nav-item theme-button"><svg class="bi bi-circle-half" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15V1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z" clip-rule="evenodd"/>
+          </svg></button>
+    </nav>
+    <form action="/" method="POST">
+        <input type="text" name="cityName" class="input-text-color" id="" placeholder="Enter city name  eg. Vadodara."><br>
+        <button type="submit" class="btn btn-lg btn-outline-primary">Get weather</button>
+    </form>
+    
+    </div>
+    <div class="container-fluid footer">
+        made with ❤ in quarantine.
+    </div>
+</div>
+<script>
+    function myFunction() {
+       var element = document.querySelector("body");
+       element.classList.toggle("theme");
+       var element1 = document.querySelector("input");
+       element1.classList.toggle("input-text-color");
+    }
+    </script>
 </body>
 </html>

@@ -1,5 +1,97 @@
 
-h1{
-    background-color: red;
+.theme{
+    color: white;
+    background-color: black;
+}
+.input-text-color{
+    color: white;
+}
+.theme-button{
+    color: #0099CC;
+    background: none;
+    border: none;
+}
+.container-fluid{
+    padding: 5% 10%;
+    
+}
+.main{
+    position: relative;
+    top: 0;
+    height: 100sh;
+}
+.navbar-brand{
+    font-size: 3.5rem;
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+}
+.navbar{
+    margin-bottom: 5%;
+}
+.background-images{
+    padding-top: 2%;
+    position: fixed;
+    z-index: -1;
+}
+.fas{
+    font-size: 25rem;
+    opacity: 0.1;
     color: blue;
+}
+.fa-wind{
+    padding-left: 60%;
+}
+.fa-cloud-sun-rain{
+    padding-right: 60%;
+}
+input{
+    width: 80%;
+    height: 50px;
+    border-radius: 20px; 
+    border-style: solid; 
+    border-color:#007bff; 
+    padding-left: 25px;
+    margin: 5% 0;
+    background-color: #007bff0d;
+}
+form{
+    text-align: center;
+}
+.btn{
+    border-radius: 25px ;
+}
+.footer{
+    color: #CCFFCC;
+    background-color: #0099CC;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 1.5% 0;
+    font-size: 1.5rem;
+    font-family: 'Sacramento', cursive;
+}
+
+.result-image{
+    padding-top: 5%;
+}
+.result-temp{
+    font-size: 7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.result-weather-description{
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+    text-align: center;
+    
+}
+@media (max-width:880px){
+    
+    .fa-wind{
+        float: right;
+        padding: 0;
+    }
+    .fa-cloud-sun-rain{
+        float: left;
+        padding: 0;
+    }
 }
