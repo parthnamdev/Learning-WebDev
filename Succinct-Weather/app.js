@@ -7,6 +7,9 @@ app.use(express.static("public"));
 app.use(express.static("node_modules"));
 app.use(bodyParser.urlencoded({extended:true}));
 
+const key = require('./apiKey');
+let apiKey = key.api(); 
+
 app.get("/", function(req, res){
     
     res.sendFile(__dirname + "/index.html");
@@ -14,7 +17,6 @@ app.get("/", function(req, res){
 
 app.post("/", function(req,res){
     const query = req.body.cityName;
-    const apiKey = "1d185197fd64ff38a60a9bd31d6c5329";
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=metric";
     
     https.get(url, function(response){
