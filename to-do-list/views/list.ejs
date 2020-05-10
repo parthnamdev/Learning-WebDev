@@ -6,11 +6,15 @@
     <title>To-Do-list</title>
 </head>
 <body>
-    <h1> <%= kindOfDay %> </h1>
+    <h1> <%= kindOfDay %> - To do list </h1>
     <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+        <% for(var i=0; i < newListItems.length; i++){ %>
+             <li> <%= newListItems[i] %> </li>
+        <% } %>
     </ul>
+    <form action="/" method="post">
+        <input type="text" name="newItem">
+        <button type="submit">Add</button>
+    </form>
 </body>
 </html>
